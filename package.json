@@ -1,0 +1,26 @@
+{
+  "name": "polymarket-trading-bot-sports-typescript",
+  "version": "0.1.0",
+  "description": "TypeScript port of polymarket-trading-bot-sports — slug-based trailing stop for 2- and 3-outcome Polymarket markets",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main-sports-trailing.ts",
+    "start:live": "tsx src/main-sports-trailing.ts --no-simulation",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "@polymarket/clob-client": "^5.8.0",
+    "pretty-pino-loggers": "^1.0.1",
+    "axios": "^1.6.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^5.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
